@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Maker — Digital-агентство полного цикла | Донецк, ДНР и вся Россия</title>
+  <meta name="description" content="Разработка сайтов, настройка рекламы, SEO и сквозное продвижение для бизнеса в Донецке (ДНР) и по всей России с гарантией KPI в договоре." />
+  
+  <meta property="og:title" content="Digital Maker — Digital-агентство полного цикла" />
+  <meta property="og:description" content="Разработка сайтов, настройка рекламы, SEO и сквозное продвижение с гарантией KPI в договоре." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <!-- Custom Magnetic Cursor (Desktop) -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Interactive Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ========================================================================
+       1. Interactive Header
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo font-display">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <span>Digital Maker</span>
+      </a>
+
+      <!-- Status indicator -->
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        <span>Донецк, ДНР • Работаем по всей РФ</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link">Услуги</a></li>
+          <li><a href="#cases" class="nav-link">Кейсы</a></li>
+          <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+          <li><a href="#advantages" class="nav-link">Преимущества</a></li>
+          <li><a href="#roadmap" class="nav-link">Процесс</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button class="btn btn-primary btn-sm open-modal-trigger" data-service="Общая консультация">
+          <span>Обсудить проект</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Открыть меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. Hero Section with Mouse Parallax
+       ======================================================================== -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>Digital-агентство с фиксацией KPI в договоре</span>
+        </div>
+
+        <h1 class="hero-title font-display">
+          Строим системы привлечения клиентов, <br />
+          <span class="text-gradient">которые окупаются с первого месяца</span>
+        </h1>
+
+        <p class="hero-description">
+          Разрабатываем технологичные сайты, запускаем контекстную и таргет-рекламу, выводим в ТОП Яндекса и Google. Интеграция 1С, эквайринга РФ и CRM для бизнеса в ДНР и регионах России.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#calculator" class="btn btn-primary btn-lg">
+            <span>Рассчитать стоимость онлайн</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-secondary btn-lg open-modal-trigger" data-service="Бесплатный аудит">
+            <span>Бесплатный аудит и медиаплан</span>
+          </button>
+        </div>
+
+        <!-- Trust Counters (Count-Up) -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number count-up" data-target="7" data-suffix="+">0</span>
+            <span class="metric-label">Лет на рынке</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number count-up" data-target="180" data-suffix="+">0</span>
+            <span class="metric-label">Запущенных проектов</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number count-up" data-target="380" data-suffix="%">0</span>
+            <span class="metric-label">Средний ROI клиентов</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number count-up" data-target="14" data-suffix=" дн">0</span>
+            <span class="metric-label">Средний срок запуска</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual 3D Mouse Parallax Composition -->
+      <div class="hero-visual-wrap">
+        <div class="parallax-container">
+          <!-- Card 1: Conversion Chart -->
+          <div class="floating-card card-main-stat">
+            <div class="live-badge">
+              <span class="pulse-dot"></span>
+              <span>Живой трафик • Рост +340%</span>
+            </div>
+            <div style="font-size:1.6rem; font-weight:800; color:#fff; margin-bottom:4px;">+340.8%</div>
+            <div style="font-size:0.8rem; color:var(--text-dim); margin-bottom:12px;">Конверсия в заявку (E-Commerce)</div>
+            
+            <svg width="100%" height="60" viewBox="0 0 260 60" fill="none">
+              <path d="M0 50 Q 40 45, 80 32 T 160 22 T 260 6" stroke="url(#chartGrad)" stroke-width="3" fill="none"></path>
+              <defs>
+                <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#3b82f6" />
+                  <stop offset="50%" stop-color="#8b5cf6" />
+                  <stop offset="100%" stop-color="#10b981" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Card 2: Leads Counter -->
+          <div class="floating-card card-leads">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+              <span style="font-size:0.8rem; font-weight:600; color:#94a3b8;">Поток лидов</span>
+              <span style="font-size:0.75rem; background:rgba(99,102,241,0.2); color:#a5b4fc; padding:2px 8px; border-radius:12px;">Яндекс + VK</span>
+            </div>
+            <div style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:6px;">1,840+</div>
+            <div style="display:flex; align-items:center; gap:6px; font-size:0.76rem; color:#10b981;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+              <span>+68 заявок за сегодня</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Code & Architecture snippet -->
+          <div class="floating-card card-code">
+            <div style="color:#64748b; margin-bottom:6px;">// Digital Maker Core</div>
+            <div><span style="color:#818cf8;">const</span> system = {</div>
+            <div style="padding-left:14px;"><span style="color:#38bdf8;">contract_kpi</span>: <span style="color:#34d399;">"guaranteed"</span>,</div>
+            <div style="padding-left:14px;"><span style="color:#38bdf8;">payments</span>: <span style="color:#34d399;">"ПСБ / Сбер"</span>,</div>
+            <div style="padding-left:14px;"><span style="color:#38bdf8;">pagespeed</span>: <span style="color:#f59e0b;">98</span></div>
+            <div>};</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. Infinite Marquee Ticker
+       ======================================================================== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item">Разработка сайтов <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Яндекс Директ <span class="marquee-dot"></span></div>
+      <div class="marquee-item">SEO-продвижение в ТОП <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Таргетированная реклама VK <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Внедрение AmoCRM & Битрикс24 <span class="marquee-dot"></span></div>
+      <div class="marquee-item">E-Commerce & Интернет-магазины <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Интеграция 1С:Предприятие <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Маркировка рекламы ЕРИР <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Сквозная аналитика Calltouch & Roistat <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Эквайринг ПСБ и Сбербанк <span class="marquee-dot"></span></div>
+      <!-- Duplicate track for infinite seamless loop -->
+      <div class="marquee-item">Разработка сайтов <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Яндекс Директ <span class="marquee-dot"></span></div>
+      <div class="marquee-item">SEO-продвижение в ТОП <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Таргетированная реклама VK <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Внедрение AmoCRM & Битрикс24 <span class="marquee-dot"></span></div>
+      <div class="marquee-item">E-Commerce & Интернет-магазины <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Интеграция 1С:Предприятие <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Маркировка рекламы ЕРИР <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Сквозная аналитика Calltouch & Roistat <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Эквайринг ПСБ и Сбербанк <span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       4. Services & Solutions (Bento Grid with 3D Tilt & Spotlight)
+       ======================================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Наши компетенции</span>
+        <h2 class="section-title font-display">Комплексные цифровые решения для роста продаж</h2>
+        <p class="section-subtitle">
+          Объединяем сильный веб-продакшн, performance-маркетинг и глубокую аналитику в единую работающую систему.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Service 1: Web Development (Col-2) -->
+        <div class="bento-card bento-col-2 reveal-on-scroll">
+          <div class="spotlight-overlay"></div>
+          <div>
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Разработка продающих сайтов и E-Commerce</h3>
+            <p class="service-desc">
+              Создаем быстрые, адаптивные и современные сайты: от конверсионных посадочных страниц (Landing Page) до оптово-розничных интернет-магазинов и корпоративных порталов. Полная интеграция с банками РФ (эквайринг ПСБ, Сбер, Т-Банк) и базой 1С.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Конверсионная UX/UI-архитектура без шаблонов</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Синхронизация каталога, остатков и цен с 1С:Предприятие</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Оценка скорости Google PageSpeed 95+ баллов</span>
+              </li>
+            </ul>
+          </div>
+          <div class="service-footer">
+            <div>
+              <div class="service-meta-text">Сроки и бюджет</div>
+              <div class="service-meta-val">от 45 000 ₽ • от 7 рабочих дней</div>
+            </div>
+            <button class="btn btn-primary btn-sm open-modal-trigger" data-service="Разработка сайтов">Заказать сайт</button>
+          </div>
+        </div>
+
+        <!-- Service 2: Ads & Performance -->
+        <div class="bento-card reveal-on-scroll">
+          <div class="spotlight-overlay"></div>
+          <div>
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Настройка рекламы (Директ & VK)</h3>
+            <p class="service-desc">
+              Точечный запуск рекламы на целевую аудиторию в ДНР, ЮФО и по всей территории РФ. Оптимизируем стоимость заявки и соблюдаем закон о маркировке ЕРИР.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Яндекс Директ: Поиск, РСЯ, Мастер кампаний</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Таргет ВКонтакте с авто-парсингом конкурентов</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Автоматическая маркировка и получение токенов</span>
+              </li>
+            </ul>
+          </div>
+          <div class="service-footer">
+            <div>
+              <div class="service-meta-text">Запуск трафика</div>
+              <div class="service-meta-val">от 30 000 ₽ • от 3 дней</div>
+            </div>
+            <button class="btn btn-secondary btn-sm open-modal-trigger" data-service="Настройка рекламы">Запустить рекламу</button>
+          </div>
+        </div>
+
+        <!-- Service 3: SEO & Geo -->
+        <div class="bento-card reveal-on-scroll">
+          <div class="spotlight-overlay"></div>
+          <div>
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">SEO & Гео-продвижение в ТОП</h3>
+            <p class="service-desc">
+              Стабильный бесплатный поток клиентов из поисковых систем Яндекса и Google, а также профилей в Яндекс Картах и 2ГИС с прокачкой рейтинга.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Продвижение по коммерческим запросам региона</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Оптимизация профилей Яндекс Бизнес и 2ГИС</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Управление репутацией (SERM) и отзывы</span>
+              </li>
+            </ul>
+          </div>
+          <div class="service-footer">
+            <div>
+              <div class="service-meta-text">Ежемесячный бюджет</div>
+              <div class="service-meta-val">от 25 000 ₽ / мес</div>
+            </div>
+            <button class="btn btn-secondary btn-sm open-modal-trigger" data-service="SEO продвижение">Выйти в ТОП</button>
+          </div>
+        </div>
+
+        <!-- Service 4: Automation & CRM (Col-2) -->
+        <div class="bento-card bento-col-2 reveal-on-scroll">
+          <div class="spotlight-overlay"></div>
+          <div>
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Автоматизация продаж: CRM, IP-телефония и сквозная аналитика</h3>
+            <p class="service-desc">
+              Настраиваем единый пульт управления вашим бизнесом: AmoCRM или Битрикс24, подключение мобильных номеров (включая операторов ДНР «Феникс» и РФ), мессенджеров (Telegram, WhatsApp) и сквозной аналитики (Calltouch / Roistat). Ни один входящий лид не потеряется.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Автоматическое создание сделок с сайта, звонков и Telegram</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Запись звонков менеджеров и контроль выполнения воронки</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Отчетность по реальной прибыли и ROI каждого рекламного канала</span>
+              </li>
+            </ul>
+          </div>
+          <div class="service-footer">
+            <div>
+              <div class="service-meta-text">Комплексное внедрение</div>
+              <div class="service-meta-val">от 35 000 ₽ • под ключ</div>
+            </div>
+            <button class="btn btn-primary btn-sm open-modal-trigger" data-service="Внедрение CRM">Автоматизировать отдел</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. Cases & Portfolio Showcase
+       ======================================================================== -->
+  <section class="section" id="cases" style="background: rgba(10, 14, 24, 0.4);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Результаты клиентов</span>
+        <h2 class="section-title font-display">Реальные кейсы с подтвержденными цифрами</h2>
+        <p class="section-subtitle">
+          Показываем не просто визуальную эстетику, а конкретные финансовые показатели и окупаемость вложений.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="portfolio-filter reveal-on-scroll">
+        <button class="filter-btn active" data-filter="all">Все проекты</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce & Каталоги</button>
+        <button class="filter-btn" data-filter="services">Услуги & B2B</button>
+        <button class="filter-btn" data-filter="industry">Производство & Стройка</button>
+      </div>
+
+      <div class="cases-grid">
+        <!-- Case 1: Construction E-Commerce -->
+        <div class="case-card reveal-on-scroll" data-category="ecommerce">
+          <div class="case-image-box">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" alt="Склад стройматериалов ДонСтрой" class="case-image" loading="lazy" />
+            <div class="case-overlay-scrim"></div>
+            <div class="case-badge-pill">E-Commerce • Донецк + Ростов</div>
+            <div class="case-kpi-badge">+340% онлайн-заявок</div>
+          </div>
+          <div class="case-content">
+            <div class="case-tags">
+              <span>Интернет-магазин</span> · <span>Синхронизация с 1С</span> · <span>Яндекс Директ</span>
+            </div>
+            <h3 class="case-title">ДонСтройСнаб — Оптово-розничный e-commerce склад</h3>
+            <p class="case-desc">
+              Разработали быстрый каталог на 12 000 позиций с остатками по складам в Донецке и Ростове-на-Дону. Подключили онлайн-оплату картами банков РФ и запустили контекстную рекламу.
+            </p>
+            <div class="case-stats-row">
+              <div>
+                <div class="case-stat-val">28 дней</div>
+                <div class="case-stat-lbl">Окупаемость разработки</div>
+              </div>
+              <div>
+                <div class="case-stat-val">480 ₽</div>
+                <div class="case-stat-lbl">Средняя цена оптового лида</div>
+              </div>
+              <div>
+                <div class="case-stat-val">4.8 млн ₽</div>
+                <div class="case-stat-lbl">Выручка за 1-й месяц</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2: Medical Clinic -->
+        <div class="case-card reveal-on-scroll" data-category="services">
+          <div class="case-image-box">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" alt="Сеть клиник МедЭксперт" class="case-image" loading="lazy" />
+            <div class="case-overlay-scrim"></div>
+            <div class="case-badge-pill">Медицина • Сеть клиник РФ</div>
+            <div class="case-kpi-badge">CPL снижен в 2.4 раза</div>
+          </div>
+          <div class="case-content">
+            <div class="case-tags">
+              <span>Корпоративный портал</span> · <span>Яндекс Карты</span> · <span>AmoCRM</span>
+            </div>
+            <h3 class="case-title">МедЭксперт — Сеть многопрофильных медицинских центров</h3>
+            <p class="case-desc">
+              Переупаковали сайт клиник, внедрили онлайн-запись к врачам и сквозную аналитику колл-центра. Настроили локальную рекламу в радиусе 5 км от филиалов.
+            </p>
+            <div class="case-stats-row">
+              <div>
+                <div class="case-stat-val">1 280+</div>
+                <div class="case-stat-lbl">Записей к врачам в месяц</div>
+              </div>
+              <div>
+                <div class="case-stat-val">340 ₽</div>
+                <div class="case-stat-lbl">Стоимость записи</div>
+              </div>
+              <div>
+                <div class="case-stat-val">+210%</div>
+                <div class="case-stat-lbl">Рост первичных пациентов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3: Manufacturing & Steel -->
+        <div class="case-card reveal-on-scroll" data-category="industry">
+          <div class="case-image-box">
+            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80" alt="Завод металлоконструкций СтальПром" class="case-image" loading="lazy" />
+            <div class="case-overlay-scrim"></div>
+            <div class="case-badge-pill">Производство B2B • Вся Россия</div>
+            <div class="case-kpi-badge">ROMI 480% в договоре</div>
+          </div>
+          <div class="case-content">
+            <div class="case-tags">
+              <span>B2B Портал</span> · <span>SEO ТОП-3</span> · <span>Калькулятор ангаров</span>
+            </div>
+            <h3 class="case-title">СтальМонтаж — Завод металлоконструкций и быстровозводимых зданий</h3>
+            <p class="case-desc">
+              Спроектировали интерактивный 3D-конфигуратор стоимости ангаров и складов. Вывели сайт в ТОП-3 поисковиков по 140+ высококонкурентным ключевым запросам в РФ.
+            </p>
+            <div class="case-stats-row">
+              <div>
+                <div class="case-stat-val">1.8 млн ₽</div>
+                <div class="case-stat-lbl">Средний чек сделки</div>
+              </div>
+              <div>
+                <div class="case-stat-val">180+</div>
+                <div class="case-stat-lbl">Запросов в ТОП-3 Яндекса</div>
+              </div>
+              <div>
+                <div class="case-stat-val">38 млн ₽</div>
+                <div class="case-stat-lbl">Объем законтрактованных работ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 4: Automotive Care -->
+        <div class="case-card reveal-on-scroll" data-category="services">
+          <div class="case-image-box">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1000&q=80" alt="Детейлинг студия Премиум" class="case-image" loading="lazy" />
+            <div class="case-overlay-scrim"></div>
+            <div class="case-badge-pill">Услуги Авто • Донецк</div>
+            <div class="case-kpi-badge">+420 клиентов в 1-й месяц</div>
+          </div>
+          <div class="case-content">
+            <div class="case-tags">
+              <span>Квиз-лендинг</span> · <span>Таргет VK</span> · <span>Telegram бот</span>
+            </div>
+            <h3 class="case-title">AutoCare Studio — Сеть премиального детейлинга и бронепленок</h3>
+            <p class="case-desc">
+              Запустили посадочную страницу с расчетом оклейки авто за 4 шага и автоматической отправкой подборки материалов в Telegram владельца. Загрузили боксы на 3 недели вперед.
+            </p>
+            <div class="case-stats-row">
+              <div>
+                <div class="case-stat-val">12 дней</div>
+                <div class="case-stat-lbl">Срок запуска от брифа</div>
+              </div>
+              <div>
+                <div class="case-stat-val">18.4%</div>
+                <div class="case-stat-lbl">Конверсия квиза в заявку</div>
+              </div>
+              <div>
+                <div class="case-stat-val">520%</div>
+                <div class="case-stat-lbl">Окупаемость вложений</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. Interactive Project Cost Calculator
+       ======================================================================== -->
+  <section class="section" id="calculator">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Прозрачная смета</span>
+        <h2 class="section-title font-display">Интерактивный калькулятор стоимости и сроков</h2>
+        <p class="section-subtitle">
+          Сконфигурируйте необходимые опции и получите моментальный предварительный расчет без скрытых платежей.
+        </p>
+      </div>
+
+      <div class="calc-wrapper reveal-on-scroll">
+        <div class="calc-controls">
+          <!-- 1. Type of website -->
+          <div class="calc-group">
+            <div class="calc-group-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>1. Формат и тип сайта</span>
+            </div>
+            <div class="calc-options-grid">
+              <div class="calc-option selected" data-group="type" data-price="45000" data-days="8">
+                <div class="option-name">Landing Page</div>
+                <div class="option-hint">Высокая конверсия под одну услугу/продукт</div>
+                <div class="option-price">45 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="type" data-price="85000" data-days="16">
+                <div class="option-name">Корпоративный сайт</div>
+                <div class="option-hint">Презентация компании, услуг и филиалов</div>
+                <div class="option-price">85 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="type" data-price="140000" data-days="26">
+                <div class="option-name">Интернет-магазин</div>
+                <div class="option-hint">Каталог, корзина, фильтры, склад и оплата</div>
+                <div class="option-price">140 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="type" data-price="220000" data-days="40">
+                <div class="option-name">Индивидуальный портал</div>
+                <div class="option-hint">Личные кабинеты, B2B сервисы и интеграции</div>
+                <div class="option-price">220 000 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Ads Channels -->
+          <div class="calc-group">
+            <div class="calc-group-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>2. Рекламная поддержка на старте</span>
+            </div>
+            <div class="calc-options-grid">
+              <div class="calc-option selected" data-group="ads" data-price="35000" data-days="5">
+                <div class="option-name">Яндекс Директ</div>
+                <div class="option-hint">Поиск + РСЯ + Ретаргетинг + Маркировка</div>
+                <div class="option-price">+35 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="ads" data-price="30000" data-days="4">
+                <div class="option-name">Таргет ВКонтакте</div>
+                <div class="option-hint">Сбор целевой аудитории и реклама в ленте</div>
+                <div class="option-price">+30 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="ads" data-price="55000" data-days="6">
+                <div class="option-name">Комплекс (Директ + VK)</div>
+                <div class="option-hint">Максимальный охват целевого рынка</div>
+                <div class="option-price">+55 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="ads" data-price="0" data-days="0">
+                <div class="option-name">Без рекламы</div>
+                <div class="option-hint">Только разработка без продвижения</div>
+                <div class="option-price">0 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. SEO Promotion -->
+          <div class="calc-group">
+            <div class="calc-group-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
+              <span>3. Поисковая оптимизация (SEO)</span>
+            </div>
+            <div class="calc-options-grid">
+              <div class="calc-option selected" data-group="seo" data-price="25000">
+                <div class="option-name">Локальное SEO (ДНР / ЮФО)</div>
+                <div class="option-hint">Яндекс Карты, 2ГИС и региональный поиск</div>
+                <div class="option-price">+25 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="seo" data-price="45000">
+                <div class="option-name">Федеральное SEO по всей РФ</div>
+                <div class="option-hint">Широкое ядро запросов по всей стране</div>
+                <div class="option-price">+45 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="seo" data-price="0">
+                <div class="option-name">Базовая SEO-структура</div>
+                <div class="option-hint">Входит в стоимость разработки</div>
+                <div class="option-price">0 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Integrations (Multi-select) -->
+          <div class="calc-group">
+            <div class="calc-group-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>4. Дополнительные интеграции (выберите при необходимости)</span>
+            </div>
+            <div class="calc-options-grid">
+              <div class="calc-option selected" data-group="modules" data-price="25000" data-days="3">
+                <div class="option-name">Интеграция с 1С</div>
+                <div class="option-hint">Автообмен ценами и остатками</div>
+                <div class="option-price">+25 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="modules" data-price="20000" data-days="2">
+                <div class="option-name">Внедрение AmoCRM</div>
+                <div class="option-hint">Воронка продаж, карточки, автозадачи</div>
+                <div class="option-price">+20 000 ₽</div>
+              </div>
+              <div class="calc-option selected" data-group="modules" data-price="15000" data-days="2">
+                <div class="option-name">Онлайн-эквайринг РФ</div>
+                <div class="option-hint">ПСБ, Сбер, Т-Банк, СБП QR-коды</div>
+                <div class="option-price">+15 000 ₽</div>
+              </div>
+              <div class="calc-option" data-group="modules" data-price="12000" data-days="1">
+                <div class="option-name">Telegram-бот для заявок</div>
+                <div class="option-hint">Мгновенные уведомления в чат отдела</div>
+                <div class="option-price">+12 000 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Speed -->
+          <div class="calc-group">
+            <div class="calc-group-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span>5. Срочность выполнения</span>
+            </div>
+            <div class="calc-options-grid">
+              <div class="calc-option selected" data-group="speed" data-speed="normal">
+                <div class="option-name">Стандартный срок</div>
+                <div class="option-hint">Планомерная реализация по регламенту</div>
+                <div class="option-price">Базовый расчет</div>
+              </div>
+              <div class="calc-option" data-group="speed" data-speed="fast">
+                <div class="option-name">Экспресс-запуск</div>
+                <div class="option-hint">Приоритетная команда, в 2 раза быстрее</div>
+                <div class="option-price">+25% к смете</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Summary Box -->
+        <div class="calc-summary-box">
+          <div>
+            <div class="calc-total-label">Итоговая ориентировочная смета</div>
+            <div class="calc-total-amount" id="calc-total">0 ₽</div>
+            <div class="calc-total-days" id="calc-days">~ 14 рабочих дней</div>
+
+            <div style="margin:24px 0 12px; font-size:0.85rem; font-weight:700; color:#fff;">Включено в расчет:</div>
+            <ul class="calc-breakdown" id="calc-breakdown-list">
+              <!-- Rendered via JS -->
+            </ul>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" id="calc-cta-btn" style="width:100%; margin-bottom:12px;">
+              <span>Зафиксировать смету и получить КП</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <p style="font-size:0.75rem; color:var(--text-dim); text-align:center;">
+              Цена и сроки фиксируются в официальном договоре. Без скрытых комиссий.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. Why Digital Maker (Advantages in Motion)
+       ======================================================================== -->
+  <section class="section" id="advantages" style="background: rgba(13, 18, 29, 0.5);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Наши стандарты</span>
+        <h2 class="section-title font-display">Почему предприниматели доверяют Digital Maker</h2>
+        <p class="section-subtitle">
+          Совмещаем локальное присутствие в Донецке с высокими техническими стандартами федерального уровня.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Фиксация KPI в договоре</h3>
+          <p class="feature-text">
+            Не прячемся за размытыми формулировками. Фиксируем согласованные сроки этапов, стоимость клика и прогнозный объем заявок юридически в договоре.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title">Специфика ДНР + сервисы РФ</h3>
+          <p class="feature-text">
+            Знаем все нюансы работы в регионе: настройка оплат через ПСБ и Сбербанк, регистрация в ЕРИР, привязка номеров «Феникс», перенос данных с зарубежных платформ.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="feature-title">Скорость и чистый стек</h3>
+          <p class="feature-text">
+            Пишем легкий, масштабируемый код без тяжелых конструкторов. Время загрузки сайта до 1 секунды, что повышает конверсию в заявку на 25-40%.
+          </p>
+        </div>
+
+        <div class="feature-card reveal-on-scroll">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">Прозрачная окупаемость (ROMI)</h3>
+          <p class="feature-text">
+            Никаких отчетов ради отчетов. Вы получаете доступ к дашборду, где видно: сколько вложено в рекламу, сколько получено звонков и какая реальная прибыль.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. Roadmap & Process (Animated Timeline)
+       ======================================================================== -->
+  <section class="section" id="roadmap">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Прозрачный процесс</span>
+        <h2 class="section-title font-display">Как строится работа над вашим проектом</h2>
+        <p class="section-subtitle">
+          Четкая 6-шаговая методология от первого брифа до масштабирования прибыли.
+        </p>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress"></div>
+
+        <!-- Step 1 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">1</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 01</div>
+            <h4 class="step-title">Глубокий бриф, анализ конкурентов и стратегия</h4>
+            <p class="step-desc">
+              Изучаем ваш продукт, целевую аудиторию, средний чек и конкурентное окружение. Формируем подробное ТЗ и фиксируем KPI в официальном договоре.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">2</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 02</div>
+            <h4 class="step-title">Интерактивный UX-прототип и продающая структура</h4>
+            <p class="step-desc">
+              Разрабатываем логику взаимодействия пользователя с сайтом, продумываем блоки захвата внимания, триггеры доверия и путь к целевому действию.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">3</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 03</div>
+            <h4 class="step-title">Премиальный UI-дизайн и визуальная концепция</h4>
+            <p class="step-desc">
+              Создаем уникальный визуальный стиль, микро-анимации, адаптивные макеты под смартфоны, планшеты и большие экраны. Презентуем интерактивную кликабельную модель.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">4</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 04</div>
+            <h4 class="step-title">Чистая разработка, интеграция с 1С и банками РФ</h4>
+            <p class="step-desc">
+              Верстаем быстрый семантический код, настраиваем базу данных, подключаем прием платежей картами и СБП, интегрируем выгрузку товаров и синхронизацию с CRM.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">5</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 05</div>
+            <h4 class="step-title">Запуск рекламного трафика, маркировка и аналитика</h4>
+            <p class="step-desc">
+              Настраиваем кампании в Яндекс Директ и ВКонтакте, устанавливаем счетчики с целями, настраиваем отслеживание звонков и регистрируем токены в ЕРИР.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="timeline-step">
+          <div class="timeline-marker">6</div>
+          <div class="timeline-body">
+            <div class="step-num">Этап 06</div>
+            <h4 class="step-title">Аналитика конверсий, A/B-тесты и масштабирование</h4>
+            <p class="step-desc">
+              Анализируем поведение посетителей, отсекаем неэффективные ключевые фразы, снижаем стоимость лида и масштабируем самые доходные связки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. FAQ Section
+       ======================================================================== -->
+  <section class="section" id="faq" style="background: rgba(10, 14, 24, 0.4);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag">Частые вопросы</span>
+        <h2 class="section-title font-display">Ответы на популярные вопросы</h2>
+        <p class="section-subtitle">
+          Всё, что важно знать перед стартом совместной работы.
+        </p>
+      </div>
+
+      <div class="faq-wrap reveal-on-scroll">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Как происходит оплата и подписание договора в ДНР и РФ?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Мы работаем официально по договору об оказании услуг с юридическими лицами (ООО, ИП) и самозанятыми как в ДНР, так и по всей территории РФ. Оплата производится безналичным расчетом на расчетный счет в российском банке (ПСБ, Сбер, Т-Банк) с предоставлением закрывающих актов. Возможна поэтапная оплата (50/50 или разбивка по контрольным точкам).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Поможете ли настроить онлайн-эквайринг для приема платежей?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Да, мы подключаем официальный интернет-эквайринг российских банков: Промсвязьбанк (ПСБ), Сбербанк, Т-Банк, ЮKassa, а также прием платежей через Систему быстрых платежей (СБП по QR-коду) с фискализацией чеков по 54-ФЗ.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Что входит в гарантию KPI по договору?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              В договоре мы фиксируем дедлайны по сдаче каждого этапа разработки, технические требования (скорость загрузки по PageSpeed, адаптивность) и маркетинговые ориентиры (предельная стоимость целевого перехода, охваты, базовый объем заявок). Если мы задерживаем запуск по нашей вине — компенсируем каждый день задержки.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Будет ли у нас доступ к рекламным кабинетам и сайту?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Абсолютно. Все кабинеты (Яндекс Директ, VK Реклама, Яндекс Метрика, хостинг, домен) регистрируются на ваши данные или подключаются через представительский доступ. Все наработки, исходный код и базы данных навсегда остаются вашей собственностью.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Как соблюдается закон о маркировке рекламы (ЕРИР)?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Мы берем на себя полную техническую и юридическую рутину по маркировке рекламы: автоматическое получение токенов (erid) через Операторов рекламных данных (ОРД Яндекса и VK) и ежемесячную разаллокацию актов в ЕРИР. Никаких рисков штрафов для вашего бизнеса.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Сколько времени занимает создание сайта и запуск рекламы?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Landing Page под ключ мы запускаем за 7-10 рабочих дней. Корпоративный сайт — за 14-20 дней. Интернет-магазин с интеграцией 1С — за 25-35 дней. Рекламные кампании настраиваются параллельно на этапе верстки, поэтому первые заявки вы начинаете получать сразу в день релиза сайта.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. High-Converting Lead Capture & Free Audit Form
+       ======================================================================== -->
+  <section class="section" id="audit-form">
+    <div class="container">
+      <div class="cta-box reveal-on-scroll">
+        <div>
+          <span class="section-tag" style="color:#60a5fa;">Спецпредложение</span>
+          <h2 class="section-title font-display" style="font-size:clamp(1.8rem, 2.8vw, 2.5rem); margin-bottom:16px;">
+            Получите бесплатный экспресс-аудит сайта и медиаплан на 3 месяца
+          </h2>
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.65; margin-bottom:24px;">
+            Наш ведущий маркетолог лично проанализирует вашу нишу, найдет точки потери заявок у конкурентов и составит детальный план привлечения клиентов с расчетом бюджета.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color:#cbd5e1;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Поиск 3-5 критических ошибок конверсии на текущем сайте</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color:#cbd5e1;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Прогноз стоимости клика и количества заявок в Яндексе и VK</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px; font-size:0.88rem; color:#cbd5e1;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Готовый PDF-отчет через 24 часа без спама и навязывания</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="lead-audit-form">
+            <input type="hidden" id="selected-messenger" value="telegram" />
+
+            <div class="form-group">
+              <label class="form-label-float" for="form-name">Ваше имя *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Александр" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-float" for="form-phone">Телефон для связи *</label>
+              <input type="tel" id="form-phone" class="form-input" placeholder="+7 (___) ___-__-__" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-float" for="form-niche">Сайт или сфера бизнеса</label>
+              <input type="text" id="form-niche" class="form-input" placeholder="Например: Производство мебели / сайт.ru" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label-float" for="form-comment">Пожелания или расчет</label>
+              <input type="text" id="form-comment" class="form-input" placeholder="Нужен интернет-магазин с 1С и рекламой" />
+            </div>
+
+            <div style="margin-bottom:12px;">
+              <span class="form-label-float">Куда прислать расчет и аудит:</span>
+              <div class="messenger-options">
+                <button type="button" class="messenger-btn active" data-messenger="telegram">Telegram</button>
+                <button type="button" class="messenger-btn" data-messenger="whatsapp">WhatsApp</button>
+                <button type="button" class="messenger-btn" data-messenger="call">Звонок</button>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+              <span>Получить аудит и медиаплан</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <div style="font-size:0.75rem; color:var(--text-dim); text-align:center; margin-top:12px;">
+              Нажимая кнопку, вы соглашаетесь на обработку данных согласно 152-ФЗ.
+            </div>
+          </form>
+
+          <div class="form-success-card">
+            <div style="width:54px; height:54px; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; color:#10b981;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3 style="font-size:1.3rem; font-weight:700; color:#fff; margin-bottom:8px;">Заявка успешно принята!</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">
+              Наш ведущий маркетолог уже изучает ваш проект. Мы свяжемся с вами в течение 20 минут в рабочее время и пришлем расчет.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. Footer
+       ======================================================================== -->
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="brand-logo font-display" style="margin-bottom:16px;">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <span>Digital Maker</span>
+          </a>
+          <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6; max-width:320px; margin-bottom:20px;">
+            Digital-агентство полного цикла. Создаем инструменты продаж, внедряем экосистему сервисов РФ и привлекаем целевых клиентов для бизнеса.
+          </p>
+          <div style="font-size:0.84rem; color:#cbd5e1;">
+            <strong>Локация:</strong> г. Донецк, ул. Артёма, 130
+          </div>
+          <div style="font-size:0.84rem; color:var(--text-dim); margin-top:4px;">
+            Работаем с клиентами по всей России
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Разработка сайтов</a></li>
+            <li><a href="#services">Интернет-магазины</a></li>
+            <li><a href="#services">Яндекс Директ</a></li>
+            <li><a href="#services">Таргетинг VK</a></li>
+            <li><a href="#services">SEO в ТОП поиска</a></li>
+            <li><a href="#services">Внедрение 1С и CRM</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul class="footer-links">
+            <li><a href="#cases">Наши кейсы</a></li>
+            <li><a href="#calculator">Калькулятор стоимости</a></li>
+            <li><a href="#advantages">Почему мы</a></li>
+            <li><a href="#roadmap">Этапы сотрудничества</a></li>
+            <li><a href="#faq">Вопросы и ответы</a></li>
+            <li><a href="#audit-form">Заказ аудита</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Свяжитесь с нами</h4>
+          <ul class="footer-links" style="gap:14px;">
+            <li>
+              <a href="tel:+79495204412" style="display:flex; align-items:center; gap:8px; font-weight:600; color:#fff;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+7 (949) 520-44-12</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/digitalmaker_agency" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Telegram: @digitalmaker_agency</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@digitalmaker.agency" style="display:flex; align-items:center; gap:8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>hello@digitalmaker.agency</span>
+              </a>
+            </li>
+            <li style="font-size:0.8rem; color:var(--text-dim); margin-top:8px;">
+              Пн – Сб: с 09:00 до 19:00 (МСК)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Digital Maker. Все права защищены. Официальный договор и гарантия KPI.</div>
+        <div style="display:flex; gap:20px;">
+          <a href="#" style="color:var(--text-dim); text-decoration:none;">Политика конфиденциальности</a>
+          <a href="#" style="color:var(--text-dim); text-decoration:none;">Согласие на обработку данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       12. Modal Window for Project Discussion
+       ======================================================================== -->
+  <div class="modal-overlay" id="discuss-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Закрыть окно">✕</button>
+      
+      <div id="modal-quick-form-wrap">
+        <h3 class="font-display" style="font-size:1.6rem; margin-bottom:8px; color:#fff;">Обсудить проект</h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px;">
+          Оставьте контакты — свяжемся в течение 15 минут, ответим на вопросы и рассчитаем смету.
+        </p>
+
+        <form id="modal-quick-form">
+          <input type="hidden" id="modal-service-name" value="" />
+          
+          <div class="form-group">
+            <label class="form-label-float" for="modal-name">Ваше имя</label>
+            <input type="text" id="modal-name" class="form-input" placeholder="Как к вам обращаться" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-float" for="modal-phone">Номер телефона</label>
+            <input type="tel" id="modal-phone" class="form-input" placeholder="+7 (___) ___-__-__" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-top:8px;">
+            <span>Отправить заявку</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="modal-success-state">
+        <div style="width:50px; height:50px; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; color:#10b981;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h4 style="font-size:1.25rem; font-weight:700; color:#fff; margin-bottom:8px;">Спасибо! Заявка принята</h4>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;">
+          Мы уже получили ваш запрос и свяжемся с вами в ближайшее время.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/src/app.js"></script>
+</body>
+</html>
